@@ -1,7 +1,7 @@
 [project]
 name = "marketdraw"
 version = "0.1.0"
-description = "Add your description here"
+description = "Generate lottery numbers from your stock portfolio movements"
 readme = "README.md"
 authors = [
     { name = "", email = "" }
@@ -10,7 +10,7 @@ requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-marketdraw = "marketdraw:main"
+marketdraw = "marketdraw.main:main"
 
 [build-system]
 requires = ["uv_build>=0.12.24,<0.13.0"]
