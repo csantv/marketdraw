@@ -7,7 +7,10 @@ authors = [
     { name = "", email = "" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "psycopg[binary]>=3.3.6",
+    "sqlalchemy>=2.1.4",
+]
 
 [project.scripts]
 marketdraw = "marketdraw.main:main"

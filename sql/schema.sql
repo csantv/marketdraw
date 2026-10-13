@@ -7,8 +7,9 @@ create table market_closes(
     id bigint generated always as identity primary key,
     trading_date date not null,
     stock_id smallint not null references stock,
-    last_price numeric(18, 6) not null,
-    unrealized_gain numeric(18, 4) not null,
-    daily_gain numeric(18, 4) not null,
+    allocation_pct numeric not null,
+    last_price numeric not null,
+    unrealized_gain numeric not null,
+    daily_gain numeric not null,
     used boolean not null default false
 );
